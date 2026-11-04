@@ -1,0 +1,46 @@
+# Oktobot
+
+An AI agent for Android. Chat or talk to it, and it can use your phone for you: open apps, tap, type, read the screen, search the web, run tools, remember things you tell it, and run a Linux environment on the device. You bring your own AI provider (cloud API key, ChatGPT/Claude sign-in, or an on-device model).
+
+> **Oktobot is closed-source.** This repository only hosts signed release builds, release notes and documentation. License: proprietary, all rights reserved.
+
+## Download
+
+Get the latest `Oktobot_vX.Y.Z.apk` from the [Releases page](../../releases/latest).
+
+1. Download the APK on your phone (Android 9 or newer, arm64).
+2. Allow installing from your browser/file manager when Android asks.
+3. Verify the signature if you like (see below).
+
+Updates install over the previous version as long as it is signed with the same key.
+
+### Verify the download
+
+Every release lists the SHA-256 of the APK. The signing certificate is the same for every release:
+
+```
+CN=OctoBot, OU=Mobile, O=OctoBot, L=Istanbul, C=TR
+SHA-256: 37:5D:E2:F9:8A:45:19:6F:9E:E9:F0:9C:BC:C3:E5:6F:5B:22:E4:EB:78:43:C8:C2:7D:96:9C:F6:58:FE:B6:DB
+```
+
+```bash
+apksigner verify --print-certs Oktobot_vX.Y.Z.apk
+sha256sum Oktobot_vX.Y.Z.apk
+```
+
+## Shizuku support (optional)
+
+Oktobot works fully without Shizuku. If you use [Shizuku](https://shizuku.rikka.app/) or **Shizuku Next**, Oktobot can use it for one thing: keeping its own accessibility service running.
+
+- **Setup:** Oktobot → Settings → Permissions → *Shizuku & accessibility watchdog*. Every step shows a plain-language explanation first.
+- **Grant:** with Shizuku running and permission granted, one button runs `pm grant <oktobot> android.permission.WRITE_SECURE_SETTINGS` (and, on Android 13+, `appops set <oktobot> ACCESS_RESTRICTED_SETTINGS allow`). The permission survives reboots, so the watchdog keeps working even when Shizuku is not running.
+- **Watchdog (off by default):** detects "accessibility service disabled" or "enabled but not responding" and re-enables **only Oktobot's own entry** in `enabled_accessibility_services`, never other apps'. It checks after boot, about every 15 minutes and when the agent needs the service. Every automatic change shows a notification. Retries are limited (5 attempts per episode, with backoff). If it cannot fix things itself it asks you to open Accessibility settings.
+- **Shizuku Next:** detection uses the Shizuku binder API, so it behaves the same with Shizuku and Shizuku Next. Turn on *Start on boot* and *Watchdog* in Shizuku Next so Shizuku itself stays up.
+
+## Permissions
+
+Oktobot asks only for what a feature needs, and tells you why: Accessibility (phone control), notifications, microphone (voice), camera and storage (attachments), overlay (floating assistant). Phone control is optional and off until you enable it.
+
+## Support
+
+Open an [issue](../../issues) with your Android version, device and Oktobot version. Please do not post API keys or personal data.
