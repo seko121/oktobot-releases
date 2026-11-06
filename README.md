@@ -4,6 +4,29 @@ An AI agent for Android. Chat or talk to it, and it can use your phone for you: 
 
 > **Oktobot is closed-source.** This repository only hosts signed release builds, release notes and documentation. License: proprietary, all rights reserved.
 
+## What it does
+
+- **Controls your phone.** Opens apps, taps, swipes, types and reads the screen through the Accessibility service (optional, off until you enable it). It can also drive the phone over Shizuku/ADB instead of Accessibility.
+- **AI browser.** An in-app browser the agent can navigate, read and act in, plus web search (DuckDuckGo, Brave, Tavily, Google).
+- **Multi-agent.** Create several agents, each with its own instructions, model, tools and memory, and switch between them.
+- **Voice and video calls.** Talk to the agent hands-free with speech recognition and TTS, or start a video call so it can see through your camera.
+- **Create images.** Generate images, or attach a photo and have the model edit it.
+- **MCP.** Connect Model Context Protocol servers; rich MCP App widgets render inside the chat.
+- **Skills.** Supports Agent Skills (the `SKILL.md` format used by Claude and OpenClaw), including a ClawHub marketplace to search, inspect and install skills, with safety checks before anything installs.
+- **Many models, your choice.** Cloud API keys (OpenAI, Anthropic, Gemini, DeepSeek, OpenRouter and more), ChatGPT and Claude sign-in, or on-device models. Bring your own provider.
+- **Memory.** Remembers what you ask it to, with a graph view and a review step before anything is saved.
+- **Linux sandbox.** Run Ubuntu or Alpine on the device.
+- **Automation.** Scheduled tasks, heartbeat checks, and a wake word.
+
+## Screenshots
+
+<p>
+<img src="screenshots/01-chat-home.jpg" width="23%"> <img src="screenshots/06-agent-task.jpg" width="23%"> <img src="screenshots/03-voice-call.jpg" width="23%"> <img src="screenshots/04-memory-graph.jpg" width="23%">
+</p>
+<p>
+<img src="screenshots/05-connectors.jpg" width="23%"> <img src="screenshots/02-on-device-models.jpg" width="23%"> <img src="screenshots/07-scheduled-tasks.jpg" width="23%"> <img src="screenshots/10-web-search.jpg" width="23%">
+</p>
+
 ## Download
 
 Get the latest `Oktobot_vX.Y.Z.apk` from the [Releases page](../../releases/latest).
