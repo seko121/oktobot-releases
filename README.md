@@ -31,6 +31,8 @@ An AI agent for Android. Chat or talk to it, and it can use your phone for you: 
 
 <a href="https://play.google.com/store/apps/details?id=com.oktobot.app"><img alt="Get it on Google Play" src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" height="80"></a>
 
+**[Get Oktobot on Google Play](https://play.google.com/store/apps/details?id=com.oktobot.app)**
+
 Or get the signed APK directly from GitHub:
 
 Get the latest `Oktobot_vX.Y.Z.apk` from the [Releases page](../../releases/latest).
