@@ -1,0 +1,30 @@
+Oktobot is an AI agent for Android. Give it a goal and it picks the right tools and works through the steps, instead of just answering and leaving the work to you.
+
+WHAT IT CAN DO
+• Work through a task: search the web, read pages, open apps and use your connected services, step after step, until it is done or it tells you why it stopped. Watch each step, steer it mid-task, stop it any time, and set a spending cap per task.
+• Chat and talk: text chat, a live voice call screen (on-device or cloud speech, optional wake word) and video calls, so it can see through your camera when you allow it.
+• Several agents: create agents with their own instructions, model, tools and memory, and switch between them.
+• Create: generate images, or attach a photo and have the model edit it.
+• Browse: an in-app browser the agent can open, read and answer questions about.
+• Remember: it keeps what is worth remembering. Review everything in a memory graph, and delete anything you don't want kept.
+• Connect: add MCP servers (with rich in-chat widgets) or Composio connectors, and message Oktobot from Telegram or Discord.
+• Skills and schedules: use Agent Skills (SKILL.md), install them from a marketplace with safety checks before anything installs, and schedule tasks to run later.
+• Linux in your pocket: a sandboxed Linux environment with a real shell and package manager, kept in Oktobot's private storage.
+
+YOUR MODELS, YOUR CHOICE
+Oktobot doesn't ship a model. You decide where the thinking happens, per conversation.
+Cloud: connect an AI service with your own API key, or sign in with a subscription you already pay for. Works with Anthropic, OpenAI, Google Gemini, Mistral, DeepSeek, Groq, Cerebras, Together, Fireworks, OpenRouter, Perplexity, xAI, Moonshot, MiniMax, Hugging Face, Ollama and any OpenAI-compatible server.
+On-device: download a local model and run it entirely on your phone. No internet, no API key, and what you send to it never leaves the device.
+Mix both: a cloud model for hard questions, a local one for anything you want to keep off the network, including Phone Control.
+
+PHONE CONTROL: OPTIONAL, OFF BY DEFAULT
+Oktobot can carry out tasks by operating apps on your screen, using Android's accessibility service. This is not a general accessibility tool; it exists so the agent can act for you.
+It is entirely your choice. The feature is off until you turn it on, the list of apps it may control starts empty, and you add apps yourself. While it works, a coloured indicator stays on screen and a stop control is always available, including a Quick Settings tile. Screen text is filtered to remove passwords and text you are actively typing, and Oktobot attempts to redact one-time codes and card numbers; this is a best-effort filter, not a guarantee. Screenshots are blocked when a password field is on screen. If you choose a cloud model for this feature, filtered screen text and permitted screenshots go to that provider; choose an on-device model to keep them on your phone.
+
+ADVANCED, FOR SHIZUKU USERS (OPTIONAL)
+If you already use Shizuku, Oktobot can drive the phone through it instead of Accessibility, keep its own accessibility service running, and give the agent a separate small screen to work on while you keep using your phone. Every one of these is off by default and each step explains what it grants first.
+
+ABOUT YOUR DATA
+Oktobot has no account and no server of ours. Your conversations, memories and settings are stored on your device. When you use a cloud model, search provider, speech service or connector, your request goes to that company and their privacy policy applies. You decide which services to connect. See our privacy policy for what each feature sends and where.
+
+You need your own AI provider account or API key, or a downloaded on-device model, to use Oktobot.

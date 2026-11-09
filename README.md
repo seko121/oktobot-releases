@@ -1,6 +1,10 @@
 # Oktobot
 
-An AI agent for Android. Chat or talk to it, and it can use your phone for you: open apps, tap, type, read the screen, search the web, run tools, remember things you tell it, and run a Linux environment on the device. You bring your own AI provider (cloud API key, ChatGPT/Claude sign-in, or an on-device model).
+**An AI agent for Android that works for you, not just chats.** Give it a goal and it searches, browses, opens apps and uses your phone step by step until the task is done. You choose the AI: your own cloud API key, a ChatGPT / Claude / Kiro / Antigravity subscription, or a model that runs entirely on your phone.
+
+- **Phone control, your way:** Accessibility, or Shizuku / ADB for faster and more robust control, plus a separate small screen where the agent works while you keep using your phone.
+- **Everything in one agent:** voice and video calls, AI browser, image generation and editing, memory, MCP servers, Agent Skills (Claude / OpenClaw format), scheduled tasks and a sandboxed Linux shell.
+- **Private by design:** no account and no server of ours; conversations and memory stay on your device.
 
 > **Oktobot is closed-source.** This repository only hosts signed release builds, release notes and documentation. License: proprietary, all rights reserved.
 
