@@ -1,5 +1,7 @@
 # Oktobot
 
+<img src="banner.png" alt="Oktobot: your AI agent, in your pocket">
+
 **An AI agent for Android that works for you, not just chats.** Give it a goal and it searches, browses, opens apps and uses your phone step by step until the task is done. You choose the AI: your own cloud API key, a ChatGPT / Claude / Kiro / Antigravity subscription, or a model that runs entirely on your phone.
 
 - **Phone control, your way:** Accessibility, or Shizuku / ADB for faster and more robust control, plus a separate small screen where the agent works while you keep using your phone.
@@ -25,10 +27,10 @@
 ## Screenshots
 
 <p>
-<img src="screenshots/01-chat-home.jpg" width="23%"> <img src="screenshots/06-agent-task.jpg" width="23%"> <img src="screenshots/03-voice-call.jpg" width="23%"> <img src="screenshots/04-memory-graph.jpg" width="23%">
+<img src="screenshots/01-home.jpg" width="23%"> <img src="screenshots/02-subscription.jpg" width="23%"> <img src="screenshots/03-voice.jpg" width="23%"> <img src="screenshots/04-skills.jpg" width="23%">
 </p>
 <p>
-<img src="screenshots/05-connectors.jpg" width="23%"> <img src="screenshots/02-on-device-models.jpg" width="23%"> <img src="screenshots/07-scheduled-tasks.jpg" width="23%"> <img src="screenshots/10-web-search.jpg" width="23%">
+<img src="screenshots/05-artifacts.jpg" width="23%"> <img src="screenshots/06-memory.jpg" width="23%"> <img src="screenshots/07-privacy.jpg" width="23%">
 </p>
 
 ## Download
